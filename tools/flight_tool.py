@@ -325,3 +325,17 @@ def country_name_to_code(text:str):
             return code
     return None
 
+def airport_country_matches(airport: dict, country_code: str) -> bool:
+    airport_country = str(airport.get("country", "")).upper().strip()
+
+    if airport_country == country_code:
+        return True
+
+    try:
+        country = pycountry.countries.get(alpha_2=country_code)
+        if country and airport_country.lower() == country.name.lower():
+            return True
+    except Exception:
+        pass
+
+    return False
