@@ -6,8 +6,8 @@ import pycountry
 from dotenv import load_dotenv
 load_dotenv()
 
-os.getenv["SSL_CERT_FILE"]=certifi.where()
-os.getenv["REQUEST_CA_BUNDLE"]=certifi.where()
+os.environ["SSL_CERT_FILE"]=certifi.where()
+os.environ["REQUEST_CA_BUNDLE"]=certifi.where()
 
 API_KEY = os.getenv("AVIATIONSTACK_API_KEY")
 
