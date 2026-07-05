@@ -32,12 +32,6 @@ python3 -m venv venv
 venv\Scripts\activate
 ```
 
-### Windows (PowerShell)
-
-```powershell
-venv\Scripts\Activate.ps1
-```
-
 ### macOS/Linux
 
 ```bash
