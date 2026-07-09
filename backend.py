@@ -203,6 +203,9 @@ Flight Results:
 Hotel Results:
 {state['hotel_results']}
 
+Weather Results:
+{state['weather_results']}
+
 Make the itinerary practical, budget-aware, and easy to follow.
 """
 
@@ -230,6 +233,10 @@ Flights:
 
 Hotels:
 {state['hotel_results']}
+
+
+Weather:
+{state['weather_results']}
 
 Itinerary:
 {state['itinerary']}
