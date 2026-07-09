@@ -153,7 +153,8 @@ def flight_agent(state: TravelState):
 
 def hotel_agent(state: TravelState):
     query = f"Best hotels for {state['user_query']}"
-    hotel_results = tavily_search(query)
+    # hotel_results = tavily_search(query)
+    hotel_results = asyncio.run(tavily_mcp_search(query))
 
     return {
         "hotel_results": hotel_results,
@@ -163,6 +164,32 @@ def hotel_agent(state: TravelState):
         "llm_calls": state.get("llm_calls", 0) + 1
     }
     
+def weather_agent(state: TravelState):
+
+    city = extract_destination(state["user_query"])
+
+    weather_data = asyncio.run(
+        weather_mcp_search(city)
+    )
+
+    forecast_data = asyncio.run(
+        forecast_mcp_search(city)
+    )
+
+    return {
+        "weather_results": f"""
+        Current Weather:
+        {weather_data}
+
+        Forecast:
+        {forecast_data}
+        """,
+        "messages": [
+            AIMessage(
+                content="Weather information fetched"
+            )
+        ]
+    }
 def itinerary_agent(state: TravelState):
     prompt = f"""
 Create a complete travel itinerary.
