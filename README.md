@@ -343,4 +343,6 @@ It helps others discover the project and motivates future development.
 
 This project is licensed under the **MIT License**.
 
-Feel free to use, modify, and contribute.
+Feel free to use, modify, and contribute
+
+thank you!!
