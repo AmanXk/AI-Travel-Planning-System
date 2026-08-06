@@ -327,7 +327,7 @@ git commit -m "Add new feature"
 git push origin feature-name
 ```
 
-5. Open a Pull Request
+5. Open a Pull Reques
 
 ---
 
