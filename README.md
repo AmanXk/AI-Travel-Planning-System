@@ -270,7 +270,7 @@ Hotel Alexander Zurich
 • Mount Titlis
 
 📅 Day 5
-• Local Shopping
+• Loca Shopping
 • Return Flight
 ```
 
