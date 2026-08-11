@@ -264,7 +264,7 @@ Hotel Alexander Zurich
 
 📅 Day 3
 • Lucerne
-• Chapel Bridge
+• Chapel Bridg
 
 📅 Day 4
 • Mount Titlis
