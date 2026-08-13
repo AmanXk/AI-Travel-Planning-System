@@ -271,7 +271,7 @@ Hotel Alexander Zurich
 
 📅 Day 5
 • Loca Shopping
-• Return Fligh
+• Return Flight
 ```
 
 ---
