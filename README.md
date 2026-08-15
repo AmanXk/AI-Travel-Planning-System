@@ -266,7 +266,7 @@ Hotel Alexander Zurich
 • Lucerne
 • Chapel Bridg
 
-📅 Day 4
+📅 Day 
 • Mount Titli
 
 📅 Day 5
