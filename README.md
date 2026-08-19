@@ -267,7 +267,7 @@ Hotel Alexander Zurich
 • Chapel Bridg
 
 📅 Day 
-• Mount Titli
+• Mount Title
 
 📅 Day 5
 • Loca Shopping
