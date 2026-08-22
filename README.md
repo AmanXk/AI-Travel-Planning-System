@@ -341,7 +341,7 @@ It helps others discover the project and motivates future development.
 
 ## 📄 License
 
-This project is licensed under the **MIT License**.
+This project is license under the **MIT License**.
 
 Feel free to use  modify, and contribute
 
