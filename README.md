@@ -309,7 +309,7 @@ This modular design makes the system easier to maintain, extend, and improve.
 Contributions are welcome!
 
 1. Fork the repository
-2. Create a new feature branch
+2. Create a new feature branc
 
 ```bash
 git checkout -b feature-name
