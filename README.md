@@ -327,7 +327,7 @@ Please ensure existing functionality is covered before submitting.
 
 ## 📄 License
 
-Distributed under the **MIT License**. See `LICENSE` for details.
+Distributed under the **MIT License**. See `LICENSE`
 
 ---
 
