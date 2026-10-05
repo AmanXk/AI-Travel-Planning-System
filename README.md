@@ -321,7 +321,7 @@ Contributions are welcome and appreciated. To get started:
 4. **Push** — `git push origin feature/your-feature`
 5. **Open a pull request** describing the change and how it was tested.
 
-Please ensure existing functionality is covered before submitting.
+Please ensure existing functionality is covered before submitting
 
 ---
 
