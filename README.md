@@ -319,7 +319,7 @@ Contributions are welcome and appreciated. To get started:
 2. **Branch** — `git checkout -b feature/your-feature`
 3. **Commit** — `git commit -m "Add your feature"`
 4. **Push** — `git push origin feature/your-feature`
-5. **Open a pull request** describing the change and how it was tested
+5. **Open a pull request** describing the change and how it was tested.
 
 Please ensure existing functionality is covered before submitting
 
