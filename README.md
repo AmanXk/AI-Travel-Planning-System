@@ -313,7 +313,7 @@ Recommended before serving real traffic:
 
 ## 🤝 Contributing
 
-Contributions are welcome and appreciated. To get started:
+Contributions are welcome and appreciated. To get started
 
 1. **Fork** the repository.
 2. **Branch** — `git checkout -b feature/your-feature`
