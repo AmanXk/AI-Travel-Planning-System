@@ -1,4 +1,4 @@
-import os 
+import os
 import certifi
 from dotenv import load_dotenv
 
@@ -61,7 +61,7 @@ class TravelState(TypedDict):
     hotel_results: str
     itinerary: str
     llm_calls: int
-    
+
 # def flight_agent(state: TravelState):
 #     query = state["user_query"]
 #     flight_data = search_flights(query)
@@ -163,7 +163,7 @@ def hotel_agent(state: TravelState):
         ],
         "llm_calls": state.get("llm_calls", 0) + 1
     }
-    
+
 def weather_agent(state: TravelState):
 
     city = extract_destination(state["user_query"])

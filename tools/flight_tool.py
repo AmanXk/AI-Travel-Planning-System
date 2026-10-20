@@ -299,9 +299,9 @@ def clean_text(text:str)->str:
     text = text.lower().strip()
     text = re.sub(r"[^a-z0-9\s]", "", text)
     text = re.sub(r"\s+", " ", text)
-    
+
     stop_words = ["flight","flights","ticket","tickets","trip","travel","plan","complete","days","day","including","hotel","hotels","sightseeing","under","budget","info","information"]
-    
+
     words = [w for w in text.split() if w not in stop_words]
     return " ".join(words).strip()
 
@@ -309,18 +309,18 @@ def country_name_to_code(text:str):
     text = clean_text(text)
     if text in COUNTRY_ALIASES:
         return COUNTRY_ALIASES[text]
-    
+
     try:
         country = pycountry.countries.lookup(text)
         return country.alpha_2
     except LookupError:
         pass
-    
+
     for country in pycountry.countries:
         country_name = country.name.lower()
         if country_name in text:
             return country.alpha_2
-        
+
     for alias,code in COUNTRY_ALIASES.items():
         if alias in text:
             return code
@@ -375,9 +375,6 @@ def get_best_airport_for_country(country_code: str):
 
     candidates.sort(reverse=True)
     return candidates[0][1]
-
-
-
 
 def resolve_location_to_iata(location: str):
     """
@@ -479,7 +476,6 @@ def find_location_mentions(query: str):
 
     return unique_mentions
 
-
 def parse_route(query: str):
     """
     Returns:
@@ -578,7 +574,6 @@ def parse_route(query: str):
 
     return None, None
 
-
 def format_flight(flight: dict):
     airline = flight.get("airline", {}).get("name") or "Unknown airline"
     flight_number = flight.get("flight", {}).get("iata") or "Unknown flight number"
@@ -624,7 +619,6 @@ def format_flight(flight: dict):
     - Scheduled: {arr_scheduled}
     - Delay: {arr_delay_text}
     """.strip()
-
 
 def search_flights(query: str, limit: int = 10):
     if not API_KEY:
