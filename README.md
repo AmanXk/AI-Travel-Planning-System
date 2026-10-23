@@ -307,7 +307,7 @@ Recommended before serving real traffic:
 - [ ] Calendar / Google Maps integration
 - [ ] Voice-assisted planning
 - [ ] Multi-city & air-rail combined trips
-- [ ] WebSocket streaming responses (token-level
+- [ ] WebSocket streaming responses (token-level)
 
 ---
 
